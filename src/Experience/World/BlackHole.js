@@ -80,9 +80,9 @@ export default class BlackHole {
         this.noiseTexture.wrapT = THREE.RepeatWrapping
 
 
-        this.organicTexture = this.resources.items.organicTexture
-        this.organicTexture.wrapS = THREE.RepeatWrapping
-        this.organicTexture.wrapT = THREE.RepeatWrapping
+        this.gasTexture = this.resources.items.gasTexture
+        this.gasTexture.wrapS = THREE.RepeatWrapping
+        this.gasTexture.wrapT = THREE.RepeatWrapping
 
         // Create a render target texture
         this.buffer1_A = new THREE.WebGLRenderTarget(this.parameters.bufferWidth, this.parameters.bufferHeight, {
@@ -121,7 +121,7 @@ export default class BlackHole {
                     uTime: { value: 0 },
                     uResolution: { value: new THREE.Vector2(this.parameters.bufferWidth, this.parameters.bufferHeight) },
                     uBuffer1: { value: this.noiseTexture },
-                    uBuffer2: { value: this.organicTexture },
+                    uBuffer2: { value: this.gasTexture },
                     uBuffer3: { value: null },
                     uBuffer4: { value: null },
                     uCameraPosition: { value: this.camera.instance.position },

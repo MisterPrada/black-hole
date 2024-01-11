@@ -144,7 +144,7 @@ void main()
 
 
     color += GetBloom(uv) * 0.08;
-    color *= 150.0;
+    color *= 1500.0;
 
 
     //Tonemapping and color grading
@@ -162,7 +162,6 @@ void main()
 
     gl_FragColor = vec4(color, 1.0);
     //gl_FragColor.a = smoothstep(0.0, 0.4, mix(0.0, 0.6, gl_FragColor.r));
-
 
 
     //get coords and direction
@@ -210,9 +209,8 @@ void main()
     uv.x -= 0.03;
     float distance = length(uv);
 
-    // Пороги для smoothstep
-    float innerRadius = 0.3; // Внутренний радиус перехода
-    float outerRadius = 1.3; // Внешний радиус перехода
+    float innerRadius = 0.3;
+    float outerRadius = 1.3;
 
     float mixFactor = smoothstep(innerRadius, outerRadius, distance);
 

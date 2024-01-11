@@ -15,8 +15,8 @@ export default [
         path: 'textures/noise.png'
     },
     {
-        name: 'organicTexture',
+        name: 'gasTexture',
         type: 'texture',
-        path: 'textures/organic.jpg'
+        path: 'textures/gas.jpg'
     }
 ]
