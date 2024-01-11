@@ -144,7 +144,7 @@ void main()
 
 
     color += GetBloom(uv) * 0.08;
-    color *= 1500.0;
+    color *= 150.0;
 
 
     //Tonemapping and color grading
