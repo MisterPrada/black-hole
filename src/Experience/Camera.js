@@ -49,7 +49,11 @@ export default class Camera
         //     MIDDLE: null,
         //     RIGHT: null,  // Отключает действие для правой кнопки мыши
         // };
-        //
+
+        //disable rotation
+        this.controls.enableRotate = false;
+
+
         // this.controls.enableZoom = false;
     }
 
