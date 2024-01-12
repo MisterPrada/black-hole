@@ -1,3 +1,5 @@
+Original Shader - https://www.shadertoy.com/view/lstSRS
+
 How to install and run this template? \
 It's simple, just run the following commands: 
 ```
