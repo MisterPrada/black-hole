@@ -407,7 +407,7 @@ export default class BlackHole {
         this.material.uniforms.uBuffer1.value = this.buffer1_A.texture;
         this.material.uniforms.uBuffer4.value = this.buffer4_A.texture;
 
-        this.buffer1_material.uniforms.uCameraPosition.value = this.camera.instance.position
+        //this.buffer1_material.uniforms.uCameraPosition.value = this.camera.instance.position
         if( !this.isMobile )
         {
             this.buffer1_material.uniforms.uCameraZoom.value = this.camera.instance.position.distanceTo( this.camera.controls.target )
